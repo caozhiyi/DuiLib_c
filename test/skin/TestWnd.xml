@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="800,600" caption="0,0,0,32" roundcorner="0,0">
+  <VerticalLayout bkcolor="#FFFFFFFF">
+  		<HorizontalLayout height="37">
+  				<VerticalLayout width="770"/>
+  				<ButtonArrow name="closebtn" width ="29"  height="28" padding="3,3,1,0" bkcolor="#FF010203"/>
+  		</HorizontalLayout>
+  		<HorizontalLayout name="BrowserPan">
+  			<CefBrowser url="www.baidu.com" name="TestBrowser"/>
+  		</HorizontalLayout>
+  </VerticalLayout>
+</Window>
