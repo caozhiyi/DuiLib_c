@@ -2,18 +2,12 @@
 #include "include/cef_client.h"
 #include "include/base/cef_lock.h"
 #include "V8ExtensionHandler.h"
+#include "CefBrowserDll.h"
 
 namespace DuiLib {
 	class ILoadHandleSlot;
 	class ILifeSpanHandleSlot;
 	class IDisplayHandleSolt;
-
-	class IOnAfterCreateSolt : public CefBase {
-	public:
-		virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) = 0;
-	private:
-		IMPLEMENT_REFCOUNTING(IOnAfterCreateSolt);
-	};
 
 	class CBrowserClient : 
 		public CefClient,

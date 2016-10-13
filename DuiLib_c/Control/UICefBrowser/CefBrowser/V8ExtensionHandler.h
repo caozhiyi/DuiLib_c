@@ -1,10 +1,9 @@
 #pragma once
 #include "include/cef_v8.h"
-#include <boost/function.hpp>
 #include <map>
 #include "RenderAndBrowserApp.h"
+#include "CefBrowserDll.h"
 namespace DuiLib {
-	typedef boost::function<CefRefPtr<CefV8Value> (CefV8ValueList)> CustomFunction;
 	class CV8ExtensionHandler : public CefV8Handler,
 								public IOnContextCreatedSolt {
 	public:

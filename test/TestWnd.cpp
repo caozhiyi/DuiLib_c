@@ -117,4 +117,5 @@ int WINAPI WinMain(HINSTANCE instance, HINSTANCE, LPSTR command_line, int) {
 	CCefBrowserUI::InitCef(instance);
 	CTestWnd wnd;
 	wnd.Show();
+	CCefBrowserUI::Quit();
 }

@@ -8,22 +8,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj",
 		{8A42E4A3-0C1B-4449-B761-994E92018F6F} = {8A42E4A3-0C1B-4449-B761-994E92018F6F}
 	EndProjectSection
 EndProject
-<<<<<<< HEAD
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib_c", "DuiLib_c\DuiLib.vcxproj", "{0807A50D-53CA-412D-B942-C8B4733B80C1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AEB4648C-5B83-32EC-97F7-404F8B4BB204} = {AEB4648C-5B83-32EC-97F7-404F8B4BB204}
 		{8A42E4A3-0C1B-4449-B761-994E92018F6F} = {8A42E4A3-0C1B-4449-B761-994E92018F6F}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcef_dll_wrapper", "DuiLib_c\Control\UICefBrowser\libcef_dll\libcef_dll_wrapper.vcxproj", "{AEB4648C-5B83-32EC-97F7-404F8B4BB204}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CefBrowser", "DuiLib_c\Control\UICefBrowser\CefBrowser\CefBrowser.vcxproj", "{8A42E4A3-0C1B-4449-B761-994E92018F6F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AEB4648C-5B83-32EC-97F7-404F8B4BB204} = {AEB4648C-5B83-32EC-97F7-404F8B4BB204}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcef_dll_wrapper", "DuiLib_c\Control\UICefBrowser\libcef_dll\libcef_dll_wrapper.vcxproj", "{AEB4648C-5B83-32EC-97F7-404F8B4BB204}"
-EndProject
-=======
->>>>>>> parent of 756a61b... Add Cef File
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -38,6 +35,12 @@ Global
 		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Debug|Win32.Build.0 = Debug|Win32
 		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Release|Win32.ActiveCfg = Release|Win32
 		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Release|Win32.Build.0 = Release|Win32
+		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Release|Win32.ActiveCfg = Release|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Debug|Win32.Build.0 = Debug|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Release|Win32.ActiveCfg = Release|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

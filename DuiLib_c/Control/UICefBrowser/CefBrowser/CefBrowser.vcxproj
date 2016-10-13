@@ -23,9 +23,6 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="V8ExtensionHandler.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="CefBrowser.rc" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8A42E4A3-0C1B-4449-B761-994E92018F6F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -55,13 +52,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)..\build\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
     <IntDir>$(OutDir)$(ProjectName)\</IntDir>
     <IncludePath>$(OutDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\build\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
     <IntDir>$(OutDir)$(ProjectName)\</IntDir>
     <IncludePath>$(OutDir);$(IncludePath)</IncludePath>
   </PropertyGroup>
@@ -71,11 +68,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CEFBROWSER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-<<<<<<< HEAD:DuiLib_c/Control/UICefBrowser/CefBrowser/CefBrowser.vcxproj
       <AdditionalIncludeDirectories>$(ProjectDir)..;$(ExecutablePath)</AdditionalIncludeDirectories>
-=======
-      <AdditionalIncludeDirectories>$(SolutionDir)/third_party;</AdditionalIncludeDirectories>
->>>>>>> parent of 756a61b... Add Cef File:Control/UICefBrowser/CefBrowser/CefBrowser.vcxproj
+      <AdditionalIncludeDirectories>$(ProjectDir)..</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -92,7 +86,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CEFBROWSER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)/third_party;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

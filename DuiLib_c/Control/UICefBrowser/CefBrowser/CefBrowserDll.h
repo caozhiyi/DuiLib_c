@@ -1,9 +1,8 @@
 #pragma once
-#include "BrowserClient.h"
-#include "RenderAndBrowserApp.h"
+#include "include/cef_app.h"
 #include <vector>
 #include <map>
-#include "include/cef_load_handler.h"
+#include <boost/function.hpp>
 
 namespace DuiLib {
 #define EXPORT
@@ -12,6 +11,19 @@ namespace DuiLib {
 #else
 #define CEF_API __declspec(dllimport)  
 #endif 	
+
+	class CBrowserClient;
+	class CRenderAndBrowserApp;
+
+	typedef boost::function<CefRefPtr<CefV8Value> (CefV8ValueList)> CustomFunction;
+
+	class IOnAfterCreateSolt : public CefBase {
+	public:
+		virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) = 0;
+	private:
+		IMPLEMENT_REFCOUNTING(IOnAfterCreateSolt);
+	};
+
 	//IDisplayHandleSolt »Øµ÷Àà
 	class IDisplayHandleSolt {
 	public:
@@ -72,8 +84,6 @@ namespace DuiLib {
 	public:
 		virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) = 0;
 		virtual bool DoClose(CefRefPtr<CefBrowser> browser) = 0;
-		//virtual void OnBeforeClose(CefRefPtr<CefBrowser> browser) = 0;
-
 	};
 
 	class CEF_API CefBrowserDll : public IOnAfterCreateSolt {
@@ -155,5 +165,3 @@ namespace DuiLib {
 		bool need_focus_;
 	};
 }
-
-

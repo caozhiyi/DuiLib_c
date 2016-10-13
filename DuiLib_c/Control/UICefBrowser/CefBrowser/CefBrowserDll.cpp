@@ -6,7 +6,6 @@
 #include <ShlObj.h>
 
 namespace DuiLib {
-
 	CefRefPtr<CRenderAndBrowserApp> CefBrowserDll::render_app_ = NULL;
 
 	CefBrowserDll::CefBrowserDll() : client_browser_(NULL), browser_id_(-1), need_focus_(false) {

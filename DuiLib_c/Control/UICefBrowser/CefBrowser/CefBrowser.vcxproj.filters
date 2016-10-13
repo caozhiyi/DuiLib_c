@@ -41,9 +41,4 @@
     </ClInclude>
     <ClInclude Include="resource.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="CefBrowser.rc">
-      <Filter>资源文件</Filter>
-    </ResourceCompile>
-  </ItemGroup>
 </Project>

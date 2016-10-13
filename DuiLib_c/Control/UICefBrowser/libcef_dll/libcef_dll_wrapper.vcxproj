@@ -115,7 +115,8 @@ xcopy "$(ProjectDir)pak_resource" "$(OutDir)" /Y /I /S</Command>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;_NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;USING_CEF_SHARED;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$ProjectDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..</AdditionalIncludeDirectories>
+      <AdditionalOptions>/wd"4275" %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;_NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;USING_CEF_SHARED;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -133,7 +134,8 @@ xcopy "$(ProjectDir)pak_resource" "$(OutDir)" /Y /I /S</Command>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PreBuildEvent>
-      <Command>xcopy "$(ProjectDir)..\lib\Debug" "$(OutDir)" /Y /I /S</Command>
+      <Command>xcopy "$(ProjectDir)lib\Debug" "$(OutDir)" /Y /I /S
+xcopy "$(ProjectDir)pak_resource" "$(OutDir)" /Y /I /S</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

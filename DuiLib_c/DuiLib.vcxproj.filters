@@ -177,6 +177,9 @@
     <ClCompile Include="Control\UIGif.cpp">
       <Filter>Source Files\Control</Filter>
     </ClCompile>
+    <ClCompile Include="Control\UICefBrowser.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StdAfx.h">
@@ -318,6 +321,9 @@
       <Filter>Header Files\Control</Filter>
     </ClInclude>
     <ClInclude Include="Control\UIGif.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UICefBrowser.h">
       <Filter>Header Files\Control</Filter>
     </ClInclude>
   </ItemGroup>
