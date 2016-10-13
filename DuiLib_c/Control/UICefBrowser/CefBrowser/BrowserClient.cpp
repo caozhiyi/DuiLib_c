@@ -9,6 +9,12 @@
 
 namespace DuiLib
 {
+	enum ContextMenuID {
+		RIGHT_MENU_REFRESH = 1001,
+		RIGHT_MENU_FORWARD,
+		RIGHT_MENU_BACKOFF,
+	};
+
 	CBrowserClient::CBrowserClient(std::unique_ptr<ILifeSpanHandleSlot> life_handle,
 		std::unique_ptr<ILoadHandleSlot> load_handle,
 		std::unique_ptr<IDisplayHandleSolt> display_handle):
@@ -74,10 +80,40 @@ namespace DuiLib
 			if ((params->GetTypeFlags() & (CM_TYPEFLAG_PAGE | CM_TYPEFLAG_FRAME)) != 0) {
 				// Add a separator if the menu already has items.
 				if (model->GetCount() > 0) {
+					//清除默认项
 					model->Clear();
 					//model->AddSeparator();
 				}
+				//添加菜单项
+				model->AddItem(RIGHT_MENU_REFRESH, L"刷 新");
+				model->AddSeparator();
+				model->AddItem(RIGHT_MENU_FORWARD, L"前 进");
+				model->AddSeparator();
+				model->AddItem(RIGHT_MENU_BACKOFF, L"后 退");
 			}
+	}
+
+	bool CBrowserClient::OnContextMenuCommand(CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame,
+		CefRefPtr<CefContextMenuParams> params,
+		int command_id,
+		EventFlags event_flags) {
+			switch (command_id) {
+			case RIGHT_MENU_REFRESH:
+				browser_->Reload();
+				return true;
+			case RIGHT_MENU_FORWARD:
+				if(browser_->CanGoForward()) {
+					browser_->GoForward();
+				}
+				return true;
+			case RIGHT_MENU_BACKOFF:
+				if(browser_->CanGoBack()) {
+					browser_->GoBack();
+				}
+				return true;
+			}
+			return false;
 	}
 
 	void CBrowserClient::OnAfterCreated(CefRefPtr<CefBrowser> browser) {

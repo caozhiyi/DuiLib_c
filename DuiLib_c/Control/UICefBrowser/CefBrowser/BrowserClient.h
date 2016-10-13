@@ -43,12 +43,16 @@ namespace DuiLib {
 			CefBrowserSettings& settings,
 			bool* no_javascript_access);
 
-
-
 		virtual void OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
 			CefRefPtr<CefFrame> frame,
 			CefRefPtr<CefContextMenuParams> params,
 			CefRefPtr<CefMenuModel> model);
+
+		virtual bool OnContextMenuCommand(CefRefPtr<CefBrowser> browser,
+			CefRefPtr<CefFrame> frame,
+			CefRefPtr<CefContextMenuParams> params,
+			int command_id,
+			EventFlags event_flags);
 
 		// CefLifeSpanHandler methods:
 		virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) OVERRIDE;
