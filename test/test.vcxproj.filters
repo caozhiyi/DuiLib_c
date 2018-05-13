@@ -18,9 +18,15 @@
     <ClInclude Include="TestWnd.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="UICefBrowser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UICefBrowser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

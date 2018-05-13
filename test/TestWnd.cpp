@@ -75,11 +75,11 @@ IDisplayHandleSolt* CTestWnd::GetIDisplayHandleSolt(std::wstring browser_name) {
 void CTestWnd::OnAfterCreated(CefRefPtr<CefBrowser> browser) {
 	//可以在这里动态加载URL
 	CDuiRect rect = browser_pan_->GetPos();
-	browser_->ResizeBrowser(rect);
+	browser_->SetPos(rect);
 }
 
-bool CTestWnd::DoClose(CefRefPtr<CefBrowser> browser) {
-	return true;
+void CTestWnd::DoClose(CefRefPtr<CefBrowser> browser) {
+	
 }
 
 //加载出错
@@ -110,7 +110,7 @@ void CTestWnd::OnLoadEnd(CefRefPtr<CefBrowser> browser,
 	CefRefPtr<CefFrame> frame,
 	int httpStatusCode) {
 		CDuiRect rect = browser_pan_->GetPos();
-		browser_->ResizeBrowser(rect);
+		browser_->SetPos(rect);
 }
 
 int WINAPI WinMain(HINSTANCE instance, HINSTANCE, LPSTR command_line, int) {

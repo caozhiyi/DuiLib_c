@@ -1,5 +1,6 @@
 #pragma once
 #include "UIlib.h"
+#include "UICefBrowser.h"
 using namespace DuiLib;
 class CTestWnd :
 	public WindowImplBase,
@@ -28,7 +29,7 @@ public:
 	virtual IDisplayHandleSolt* GetIDisplayHandleSolt(std::wstring browser_name);
 
 	virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser);
-	virtual bool DoClose(CefRefPtr<CefBrowser> browser);
+	virtual void DoClose(CefRefPtr<CefBrowser> browser);
 	//virtual void OnBeforeClose(CefRefPtr<CefBrowser> browser);
 	//¼ÓÔØ³ö´í
 	virtual void OnLoadError(CefRefPtr<CefBrowser> browser,

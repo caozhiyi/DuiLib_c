@@ -1,46 +1,56 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcef_dll_wrapper", "libcef_dll\libcef_dll_wrapper.vcxproj", "{AEB4648C-5B83-32EC-97F7-404F8B4BB204}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib", "DuiLib\DuiLib.vcxproj", "{0807A50D-53CA-412D-B942-C8B4733B80C1}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{86039360-87F7-41AA-8DCB-6AD7C853E3D5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0807A50D-53CA-412D-B942-C8B4733B80C1} = {0807A50D-53CA-412D-B942-C8B4733B80C1}
 		{AEB4648C-5B83-32EC-97F7-404F8B4BB204} = {AEB4648C-5B83-32EC-97F7-404F8B4BB204}
 		{8A42E4A3-0C1B-4449-B761-994E92018F6F} = {8A42E4A3-0C1B-4449-B761-994E92018F6F}
+		{F1D0D7ED-4DD3-4034-97A7-952EF49EC87E} = {F1D0D7ED-4DD3-4034-97A7-952EF49EC87E}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib_c", "DuiLib_c\DuiLib.vcxproj", "{0807A50D-53CA-412D-B942-C8B4733B80C1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cef_browser", "CefBrowser\CefBrowser_browser.vcxproj", "{F1D0D7ED-4DD3-4034-97A7-952EF49EC87E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AEB4648C-5B83-32EC-97F7-404F8B4BB204} = {AEB4648C-5B83-32EC-97F7-404F8B4BB204}
-		{8A42E4A3-0C1B-4449-B761-994E92018F6F} = {8A42E4A3-0C1B-4449-B761-994E92018F6F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcef_dll_wrapper", "DuiLib_c\Control\UICefBrowser\libcef_dll\libcef_dll_wrapper.vcxproj", "{AEB4648C-5B83-32EC-97F7-404F8B4BB204}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CefBrowser", "DuiLib_c\Control\UICefBrowser\CefBrowser\CefBrowser.vcxproj", "{8A42E4A3-0C1B-4449-B761-994E92018F6F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cef_render", "CefRender\CefBrowser_render.vcxproj", "{8A42E4A3-0C1B-4449-B761-994E92018F6F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AEB4648C-5B83-32EC-97F7-404F8B4BB204} = {AEB4648C-5B83-32EC-97F7-404F8B4BB204}
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Release|Win32 = Release|Win32
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Debug|Win32.ActiveCfg = Debug|Win32
-		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Debug|Win32.Build.0 = Debug|Win32
-		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Release|Win32.ActiveCfg = Release|Win32
-		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Release|Win32.Build.0 = Release|Win32
-		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Debug|Win32.ActiveCfg = Debug|Win32
-		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Debug|Win32.Build.0 = Debug|Win32
-		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Release|Win32.ActiveCfg = Release|Win32
-		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Release|Win32.Build.0 = Release|Win32
-		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Debug|Win32.ActiveCfg = Debug|Win32
-		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Release|Win32.ActiveCfg = Release|Win32
-		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Debug|Win32.ActiveCfg = Debug|Win32
-		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Debug|Win32.Build.0 = Debug|Win32
-		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Release|Win32.ActiveCfg = Release|Win32
-		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Release|Win32.Build.0 = Release|Win32
+		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Debug|x86.ActiveCfg = Debug|Win32
+		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Debug|x86.Build.0 = Debug|Win32
+		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Release|x86.ActiveCfg = Release|Win32
+		{AEB4648C-5B83-32EC-97F7-404F8B4BB204}.Release|x86.Build.0 = Release|Win32
+		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Debug|x86.ActiveCfg = Debug|Win32
+		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Debug|x86.Build.0 = Debug|Win32
+		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Release|x86.ActiveCfg = Release|Win32
+		{0807A50D-53CA-412D-B942-C8B4733B80C1}.Release|x86.Build.0 = Release|Win32
+		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Debug|x86.Build.0 = Debug|Win32
+		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Release|x86.ActiveCfg = Release|Win32
+		{86039360-87F7-41AA-8DCB-6AD7C853E3D5}.Release|x86.Build.0 = Release|Win32
+		{F1D0D7ED-4DD3-4034-97A7-952EF49EC87E}.Debug|x86.ActiveCfg = Debug|Win32
+		{F1D0D7ED-4DD3-4034-97A7-952EF49EC87E}.Debug|x86.Build.0 = Debug|Win32
+		{F1D0D7ED-4DD3-4034-97A7-952EF49EC87E}.Release|x86.ActiveCfg = Release|Win32
+		{F1D0D7ED-4DD3-4034-97A7-952EF49EC87E}.Release|x86.Build.0 = Release|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Debug|x86.ActiveCfg = Debug|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Debug|x86.Build.0 = Debug|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Release|x86.ActiveCfg = Release|Win32
+		{8A42E4A3-0C1B-4449-B761-994E92018F6F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
