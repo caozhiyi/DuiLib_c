@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Control">
+      <UniqueIdentifier>{69617128-433e-4af4-96ec-ab707bd046fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{5ca3197b-81d6-492a-b32b-3e98019af9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Layout">
+      <UniqueIdentifier>{41d1e2e0-0ed9-4fce-b18c-5bc3e20e18df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{e2354ec9-b7ab-4963-aeae-6637c23826fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Control">
+      <UniqueIdentifier>{3b6ef743-f579-42ef-bf1a-0c2248f50ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{c2992485-3e0d-4ed9-9f3d-736f636588bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Layout">
+      <UniqueIdentifier>{d29b280d-c819-45e5-aef1-6eb44bc90bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{2af2c59f-edcf-40c5-ad70-0d4e66df3563}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="Utils\flash11.tlh">
+      <Filter>Header Files\Utils</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIActiveX.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIButton.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UICheckBox.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UICombo.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIComboBox.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIDateTime.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIEdit.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIFlash.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UILabel.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIList.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIOption.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIProgress.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIRichEdit.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIScrollBar.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UISlider.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIText.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UITreeView.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIWebBrowser.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UIBase.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UIContainer.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UIControl.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UIDlgBuilder.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UIManager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UIMarkup.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UIRender.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout\UIChildLayout.cpp">
+      <Filter>Source Files\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout\UIHorizontalLayout.cpp">
+      <Filter>Source Files\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout\UITabLayout.cpp">
+      <Filter>Source Files\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout\UITileLayout.cpp">
+      <Filter>Source Files\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout\UIVerticalLayout.cpp">
+      <Filter>Source Files\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\stb_image.c">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\UIDelegate.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\WinImplBase.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\XUnzip.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIButtonArrow.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIOptionArrow.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIButtonHtml.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UICalendar.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\UIDelegateUI.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UICheckBoxArrow.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIGif.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIActiveX.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIButton.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UICheckBox.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UICombo.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIComboBox.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIDateTime.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIEdit.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIFlash.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UILabel.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIList.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIOption.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIProgress.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIRichEdit.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIScrollBar.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UISlider.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIText.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UITreeView.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIWebBrowser.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIBase.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIContainer.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIControl.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIDefine.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIDlgBuilder.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIManager.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIMarkup.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UIRender.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout\UIChildLayout.h">
+      <Filter>Header Files\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout\UIHorizontalLayout.h">
+      <Filter>Header Files\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout\UITabLayout.h">
+      <Filter>Header Files\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout\UITileLayout.h">
+      <Filter>Header Files\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout\UIVerticalLayout.h">
+      <Filter>Header Files\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\downloadmgr.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FlashEventHandler.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\UIDelegate.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\WebBrowserEventHandler.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\WinImplBase.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIButtonArrow.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIOptionArrow.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="UIlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIButtonHtml.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UICalendar.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\UIDelegateUI.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UICheckBoxArrow.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIGif.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="export">
+      <UniqueIdentifier>{0f10c808-2992-4c8c-8115-199f59ee3610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="browser">
+      <UniqueIdentifier>{9689ed97-fb86-40a5-aa63-1095f2464772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{1e71161f-5ba1-4258-b210-f03539dfe455}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CefBrowserDll.cpp">
+      <Filter>export</Filter>
+    </ClCompile>
+    <ClCompile Include="browser\BrowserClient.cpp">
+      <Filter>browser</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ClientApp.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="browser\BrowserClientApp.cpp">
+      <Filter>browser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CefBrowserDll.h">
+      <Filter>export</Filter>
+    </ClInclude>
+    <ClInclude Include="browser\BrowserClient.h">
+      <Filter>browser</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ClientApp.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="browser\BrowserClientApp.h">
+      <Filter>browser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
