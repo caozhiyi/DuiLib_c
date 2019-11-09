@@ -14,7 +14,7 @@ DuiLib_c封装了cef3作为Duilib的一个控件，以帮助Windows桌面软件�
 ### cef初始化和析构   
 主进程的入口处初始化cef：   
 ```c++
-CCefBrowserUI::InitCef(instance);                                                                                      
+CCefBrowserUI::InitCef(instance);  
 ```
 退出进程时调用析构cef资源。   
 ```c++
