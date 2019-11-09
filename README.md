@@ -1,10 +1,10 @@
 # DuiLib_c
 <p align="left">
-    <a href="https://travis-ci.org/caozhiyi/CppNet"><img src="https://travis-ci.org/caozhiyi/CppNet.svg?branch=master" alt="Build Status"></a>
+    <a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://img.shields.io/badge/license-bsd-orange.svg" alt="Licenses"></a>
 </p> 
 
 ## 简介
-DuiLib_c封装了cef作为Duilib的一个控件，以帮助Windows桌面软件以非常低的成本内嵌一个chromium浏览器。   
+DuiLib_c封装了cef3作为Duilib的一个控件，以帮助Windows桌面软件以非常低的成本内嵌一个chromium浏览器。   
 1.默认将渲染进程和主进程分离为两个独立的进程，以加快浏览器界面的渲染速度；    
 2.支持C++和JaveScript之间相互的函数调用，只需在窗体初始化时将C++函数注册到V8内核中；   
 3.支持动态的创建和销毁浏览器窗口，支持同客户端多浏览器窗口；    
