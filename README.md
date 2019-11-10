@@ -37,7 +37,7 @@ if (_tcsicmp(pstrClass, CCefBrowserUIItemInterface) == 0) {
    
 ### C++和JaveScript交互    
 C++调用JavaScript，直接调用控件的ExectueJS接口即可。    
-JavaScript调用C++, 需要在Duilib的InitWindow接口中将C++可被调用的函数注册到V8内核中，传递的函数对象是Boost::function，所以可以设置任意函数作为JavaScript调用接口。    
+JavaScript调用C++, 需要在Duilib的InitWindow接口中将C++可被调用的函数注册到V8内核中，传递的函数对象是std::function，所以可以设置任意函数作为JavaScript调用接口。    
 需要注意的是，每个控件注册的函数并不共享，所以一个函数如何想被多个浏览器窗口调用，需要多次注册到每个浏览器控件中。  
    
 ### 浏览器基本操作和通知   
@@ -65,7 +65,7 @@ git上携带的工程文件是VS2010的工程文件，可以由任何大于2010�
 
 ## 协议
 
-CppNet使用BSD 3-Clause使用条款，详情请看[https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)。  
+DuiLib_c 使用BSD 3-Clause使用条款，详情请看[https://opensource.org/licenses/BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)。  
 
 如果觉得对你有帮助，请点个star吧(●'◡'●)   
 Blog address：https://blog.csdn.net/u012778714/article/details/74178097   
