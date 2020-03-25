@@ -43,7 +43,7 @@ JavaScript调用C++, 需要在Duilib的InitWindow接口中将C++可被调用的�
 ### 浏览器基本操作和通知   
 浏览器的导航，后退，前进等基本操作，直接调用[CCefBrowserUI](/test/UICefBrowser.h)控件的接口即可。   
 浏览器状态改变的通知需要注册回调接口获取，首先窗体类需要继承ISetHandleSolt类，在继承的函数中通过返回this指针，来检测不同的回调事件，其中：  
-ILifeSpanHandleSlot是关于浏览器窗体声明周期相关的回调;   
+ILifeSpanHandleSlot是关于浏览器窗体生命周期相关的回调;   
 ILifeSpanFileDialogSolt是关于文件选择对话框的相关回调;    
 ILoadHandleSlot是关于浏览器url加载状态相关的回调;   
    
